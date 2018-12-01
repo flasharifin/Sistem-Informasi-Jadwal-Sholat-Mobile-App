@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mochamad_arifin.sholatyuk"
+    android:versionCode="20181124"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/istanbul"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activity.MainActivityJava"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".activity.StartUpActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/splash_app_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SignInActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/signin_app_theme">
+
+        </activity>
+        <activity
+            android:name=".activity.AboutUs"
+            android:theme="@style/signin_app_theme">
+
+        </activity>
+    </application>
+
+</manifest>

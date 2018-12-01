@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    tools:context=".activity.AboutUs">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_yana"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="200dp"
+        android:src="@drawable/yana"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_yana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_arifin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_arifin"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/arifin"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/name_arifin"
+        app:layout_constraintEnd_toStartOf="@+id/profile_image_yana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name_arifin"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Mochamad Arifin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/arifin_job_title"
+        app:layout_constraintEnd_toStartOf="@+id/name_yana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_arifin"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/arifin_job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="( Mobile Aplication Programer )"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/yana_job_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_arifin" />
+
+    <TextView
+        android:id="@+id/name_yana"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Muhammad Yana Mulyana"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/yana_job_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_arifin"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image_yana" />
+
+    <TextView
+        android:id="@+id/yana_job_title"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="240dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="( Ruby Programer )"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arifin_job_title"
+        app:layout_constraintTop_toBottomOf="@+id/name_yana" />
+
+    <!--sosial media arifin-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/facebook_arifin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="150dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/fb"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/instagram_arifin"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/arifin_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/instagram_arifin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/instagram"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/linkedin_arifin"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/facebook_arifin"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/arifin_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/github_arifin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="10dp"-->
+        <!--android:src="@drawable/github"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/facebook_yana"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/linkedin_arifin"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/arifin_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/linkedin_arifin"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/linkedin"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/github_arifin"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/instagram_arifin"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/arifin_job_title" />-->
+
+    <!--&lt;!&ndash;sosial media yana&ndash;&gt;-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/facebook_yana"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="170dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/fb"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/instagram_yana"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/github_arifin"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yana_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/instagram_yana"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/instagram"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/linkedin_yana"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/facebook_yana"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yana_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/github_yana"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="192dp"-->
+        <!--android:src="@drawable/github"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/linkedin_yana"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yana_job_title" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/linkedin_yana"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:src="@drawable/linkedin"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/github_yana"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/instagram_yana"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/yana_job_title" />-->
+
+
+
+</android.support.constraint.ConstraintLayout>
